@@ -18,8 +18,8 @@ class MotionCapture2D_ViewController: UIViewController, ARSessionDelegate {
     let circleWidth: CGFloat = 10
     let circleHeight: CGFloat = 10
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
         arView.session.delegate = self
         

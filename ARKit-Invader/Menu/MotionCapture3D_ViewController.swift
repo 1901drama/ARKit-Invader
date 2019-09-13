@@ -18,8 +18,8 @@ class MotionCapture3D_ViewController: UIViewController, ARSessionDelegate {
     var character: BodyTrackedEntity?
     let characterAnchor = AnchorEntity()
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
         arView.session.delegate = self
         

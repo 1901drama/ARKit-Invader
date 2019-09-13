@@ -16,14 +16,6 @@ class Menu_ViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-    }
-    
     @IBAction func HowToUse_Touch(_ sender: Any) {
         let url = URL(string: "https://qiita.com/1901drama")
         UIApplication.shared.open(url!)
