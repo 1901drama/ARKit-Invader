@@ -21,6 +21,8 @@
 		7B500524232BB1CD00F3B448 /* Menu_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B500523232BB1CD00F3B448 /* Menu_ViewController.swift */; };
 		7B50052F232BB26700F3B448 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B50052D232BB26600F3B448 /* LaunchScreen.storyboard */; };
 		7B500530232BB26700F3B448 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B50052E232BB26600F3B448 /* Main.storyboard */; };
+		7BF6FA43232BE58200887F33 /* PixelMplus10-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7BF6FA41232BE58200887F33 /* PixelMplus10-Regular.ttf */; };
+		7BF6FA44232BE58200887F33 /* ATROX.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 7BF6FA42232BE58200887F33 /* ATROX.TTF */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		7B500523232BB1CD00F3B448 /* Menu_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu_ViewController.swift; sourceTree = "<group>"; };
 		7B50052D232BB26600F3B448 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B50052E232BB26600F3B448 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		7BF6FA41232BE58200887F33 /* PixelMplus10-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PixelMplus10-Regular.ttf"; sourceTree = "<group>"; };
+		7BF6FA42232BE58200887F33 /* ATROX.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = ATROX.TTF; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,11 +131,22 @@
 				7B5004EF232BAFE300F3B448 /* AppDelegate.swift */,
 				7B500523232BB1CD00F3B448 /* Menu_ViewController.swift */,
 				7B1BD5FE232BBA0D00AD4CD7 /* Menu */,
+				7BF6FA40232BE57000887F33 /* Font */,
 				7B5004F1232BAFE300F3B448 /* art.scnassets */,
 				7B5004F8232BAFE700F3B448 /* Assets.xcassets */,
 				7B5004FD232BAFE700F3B448 /* Info.plist */,
 			);
 			path = "ARKit-Invader";
+			sourceTree = "<group>";
+		};
+		7BF6FA40232BE57000887F33 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				7BF6FA42232BE58200887F33 /* ATROX.TTF */,
+				7BF6FA41232BE58200887F33 /* PixelMplus10-Regular.ttf */,
+			);
+			name = Font;
+			path = Menu/Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +255,8 @@
 			files = (
 				7B5004F2232BAFE300F3B448 /* art.scnassets in Resources */,
 				7B500530232BB26700F3B448 /* Main.storyboard in Resources */,
+				7BF6FA43232BE58200887F33 /* PixelMplus10-Regular.ttf in Resources */,
+				7BF6FA44232BE58200887F33 /* ATROX.TTF in Resources */,
 				7B50052F232BB26700F3B448 /* LaunchScreen.storyboard in Resources */,
 				7B5004F9232BAFE700F3B448 /* Assets.xcassets in Resources */,
 			);
