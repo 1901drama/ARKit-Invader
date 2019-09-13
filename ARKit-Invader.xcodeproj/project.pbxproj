@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B1BD5F6232BB9FE00AD4CD7 /* SimultaneousCamera_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1BD5EE232BB9FD00AD4CD7 /* SimultaneousCamera_ViewController.swift */; };
+		7B1BD5F7232BB9FE00AD4CD7 /* MotionCapture3D_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1BD5EF232BB9FD00AD4CD7 /* MotionCapture3D_ViewController.swift */; };
+		7B1BD5F8232BB9FE00AD4CD7 /* CollaborativeSessions_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1BD5F0232BB9FD00AD4CD7 /* CollaborativeSessions_ViewController.swift */; };
+		7B1BD5F9232BB9FE00AD4CD7 /* PeopleOcclusion2D_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1BD5F1232BB9FD00AD4CD7 /* PeopleOcclusion2D_ViewController.swift */; };
+		7B1BD5FA232BB9FE00AD4CD7 /* CoachingUI_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1BD5F2232BB9FE00AD4CD7 /* CoachingUI_ViewController.swift */; };
+		7B1BD5FB232BB9FE00AD4CD7 /* MultipleFaceTracking_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1BD5F3232BB9FE00AD4CD7 /* MultipleFaceTracking_ViewController.swift */; };
+		7B1BD5FC232BB9FE00AD4CD7 /* MotionCapture2D_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1BD5F4232BB9FE00AD4CD7 /* MotionCapture2D_ViewController.swift */; };
+		7B1BD5FD232BB9FE00AD4CD7 /* PeopleOcclusion3D_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1BD5F5232BB9FE00AD4CD7 /* PeopleOcclusion3D_ViewController.swift */; };
+		7B5004F0232BAFE300F3B448 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5004EF232BAFE300F3B448 /* AppDelegate.swift */; };
+		7B5004F2232BAFE300F3B448 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B5004F1232BAFE300F3B448 /* art.scnassets */; };
+		7B5004F9232BAFE700F3B448 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B5004F8232BAFE700F3B448 /* Assets.xcassets */; };
+		7B500524232BB1CD00F3B448 /* Menu_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B500523232BB1CD00F3B448 /* Menu_ViewController.swift */; };
+		7B50052F232BB26700F3B448 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B50052D232BB26600F3B448 /* LaunchScreen.storyboard */; };
+		7B500530232BB26700F3B448 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B50052E232BB26600F3B448 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7B500503232BAFE700F3B448 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B5004E4232BAFE200F3B448 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B5004EB232BAFE300F3B448;
+			remoteInfo = "ARKit-Invader";
+		};
+		7B50050E232BAFE700F3B448 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B5004E4232BAFE200F3B448 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B5004EB232BAFE300F3B448;
+			remoteInfo = "ARKit-Invader";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7B1BD5EE232BB9FD00AD4CD7 /* SimultaneousCamera_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimultaneousCamera_ViewController.swift; sourceTree = "<group>"; };
+		7B1BD5EF232BB9FD00AD4CD7 /* MotionCapture3D_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionCapture3D_ViewController.swift; sourceTree = "<group>"; };
+		7B1BD5F0232BB9FD00AD4CD7 /* CollaborativeSessions_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollaborativeSessions_ViewController.swift; sourceTree = "<group>"; };
+		7B1BD5F1232BB9FD00AD4CD7 /* PeopleOcclusion2D_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleOcclusion2D_ViewController.swift; sourceTree = "<group>"; };
+		7B1BD5F2232BB9FE00AD4CD7 /* CoachingUI_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoachingUI_ViewController.swift; sourceTree = "<group>"; };
+		7B1BD5F3232BB9FE00AD4CD7 /* MultipleFaceTracking_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleFaceTracking_ViewController.swift; sourceTree = "<group>"; };
+		7B1BD5F4232BB9FE00AD4CD7 /* MotionCapture2D_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionCapture2D_ViewController.swift; sourceTree = "<group>"; };
+		7B1BD5F5232BB9FE00AD4CD7 /* PeopleOcclusion3D_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleOcclusion3D_ViewController.swift; sourceTree = "<group>"; };
+		7B5004EC232BAFE300F3B448 /* ARKit-Invader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ARKit-Invader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B5004EF232BAFE300F3B448 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7B5004F1232BAFE300F3B448 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		7B5004F8232BAFE700F3B448 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7B5004FD232BAFE700F3B448 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B500502232BAFE700F3B448 /* ARKit-InvaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ARKit-InvaderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B50050D232BAFE700F3B448 /* ARKit-InvaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ARKit-InvaderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B500523232BB1CD00F3B448 /* Menu_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu_ViewController.swift; sourceTree = "<group>"; };
+		7B50052D232BB26600F3B448 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7B50052E232BB26600F3B448 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B5004E9232BAFE300F3B448 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B5004FF232BAFE700F3B448 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B50050A232BAFE700F3B448 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B1BD5FE232BBA0D00AD4CD7 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				7B1BD5F2232BB9FE00AD4CD7 /* CoachingUI_ViewController.swift */,
+				7B1BD5F1232BB9FD00AD4CD7 /* PeopleOcclusion2D_ViewController.swift */,
+				7B1BD5F5232BB9FE00AD4CD7 /* PeopleOcclusion3D_ViewController.swift */,
+				7B1BD5F4232BB9FE00AD4CD7 /* MotionCapture2D_ViewController.swift */,
+				7B1BD5EF232BB9FD00AD4CD7 /* MotionCapture3D_ViewController.swift */,
+				7B1BD5F3232BB9FE00AD4CD7 /* MultipleFaceTracking_ViewController.swift */,
+				7B1BD5EE232BB9FD00AD4CD7 /* SimultaneousCamera_ViewController.swift */,
+				7B1BD5F0232BB9FD00AD4CD7 /* CollaborativeSessions_ViewController.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		7B5004E3232BAFE200F3B448 = {
+			isa = PBXGroup;
+			children = (
+				7B5004EE232BAFE300F3B448 /* ARKit-Invader */,
+				7B5004ED232BAFE300F3B448 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7B5004ED232BAFE300F3B448 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B5004EC232BAFE300F3B448 /* ARKit-Invader.app */,
+				7B500502232BAFE700F3B448 /* ARKit-InvaderTests.xctest */,
+				7B50050D232BAFE700F3B448 /* ARKit-InvaderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B5004EE232BAFE300F3B448 /* ARKit-Invader */ = {
+			isa = PBXGroup;
+			children = (
+				7B50052D232BB26600F3B448 /* LaunchScreen.storyboard */,
+				7B50052E232BB26600F3B448 /* Main.storyboard */,
+				7B5004EF232BAFE300F3B448 /* AppDelegate.swift */,
+				7B500523232BB1CD00F3B448 /* Menu_ViewController.swift */,
+				7B1BD5FE232BBA0D00AD4CD7 /* Menu */,
+				7B5004F1232BAFE300F3B448 /* art.scnassets */,
+				7B5004F8232BAFE700F3B448 /* Assets.xcassets */,
+				7B5004FD232BAFE700F3B448 /* Info.plist */,
+			);
+			path = "ARKit-Invader";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7B5004EB232BAFE300F3B448 /* ARKit-Invader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B500516232BAFE700F3B448 /* Build configuration list for PBXNativeTarget "ARKit-Invader" */;
+			buildPhases = (
+				7B5004E8232BAFE300F3B448 /* Sources */,
+				7B5004E9232BAFE300F3B448 /* Frameworks */,
+				7B5004EA232BAFE300F3B448 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ARKit-Invader";
+			productName = "ARKit-Invader";
+			productReference = 7B5004EC232BAFE300F3B448 /* ARKit-Invader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7B500501232BAFE700F3B448 /* ARKit-InvaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B500519232BAFE700F3B448 /* Build configuration list for PBXNativeTarget "ARKit-InvaderTests" */;
+			buildPhases = (
+				7B5004FE232BAFE700F3B448 /* Sources */,
+				7B5004FF232BAFE700F3B448 /* Frameworks */,
+				7B500500232BAFE700F3B448 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B500504232BAFE700F3B448 /* PBXTargetDependency */,
+			);
+			name = "ARKit-InvaderTests";
+			productName = "ARKit-InvaderTests";
+			productReference = 7B500502232BAFE700F3B448 /* ARKit-InvaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7B50050C232BAFE700F3B448 /* ARKit-InvaderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B50051C232BAFE700F3B448 /* Build configuration list for PBXNativeTarget "ARKit-InvaderUITests" */;
+			buildPhases = (
+				7B500509232BAFE700F3B448 /* Sources */,
+				7B50050A232BAFE700F3B448 /* Frameworks */,
+				7B50050B232BAFE700F3B448 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B50050F232BAFE700F3B448 /* PBXTargetDependency */,
+			);
+			name = "ARKit-InvaderUITests";
+			productName = "ARKit-InvaderUITests";
+			productReference = 7B50050D232BAFE700F3B448 /* ARKit-InvaderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B5004E4232BAFE200F3B448 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = 1901drama;
+				TargetAttributes = {
+					7B5004EB232BAFE300F3B448 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					7B500501232BAFE700F3B448 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 7B5004EB232BAFE300F3B448;
+					};
+					7B50050C232BAFE700F3B448 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 7B5004EB232BAFE300F3B448;
+					};
+				};
+			};
+			buildConfigurationList = 7B5004E7232BAFE200F3B448 /* Build configuration list for PBXProject "ARKit-Invader" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7B5004E3232BAFE200F3B448;
+			productRefGroup = 7B5004ED232BAFE300F3B448 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B5004EB232BAFE300F3B448 /* ARKit-Invader */,
+				7B500501232BAFE700F3B448 /* ARKit-InvaderTests */,
+				7B50050C232BAFE700F3B448 /* ARKit-InvaderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7B5004EA232BAFE300F3B448 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B5004F2232BAFE300F3B448 /* art.scnassets in Resources */,
+				7B500530232BB26700F3B448 /* Main.storyboard in Resources */,
+				7B50052F232BB26700F3B448 /* LaunchScreen.storyboard in Resources */,
+				7B5004F9232BAFE700F3B448 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B500500232BAFE700F3B448 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B50050B232BAFE700F3B448 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B5004E8232BAFE300F3B448 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B1BD5FC232BB9FE00AD4CD7 /* MotionCapture2D_ViewController.swift in Sources */,
+				7B1BD5FB232BB9FE00AD4CD7 /* MultipleFaceTracking_ViewController.swift in Sources */,
+				7B1BD5FA232BB9FE00AD4CD7 /* CoachingUI_ViewController.swift in Sources */,
+				7B5004F0232BAFE300F3B448 /* AppDelegate.swift in Sources */,
+				7B1BD5F6232BB9FE00AD4CD7 /* SimultaneousCamera_ViewController.swift in Sources */,
+				7B1BD5F8232BB9FE00AD4CD7 /* CollaborativeSessions_ViewController.swift in Sources */,
+				7B1BD5F9232BB9FE00AD4CD7 /* PeopleOcclusion2D_ViewController.swift in Sources */,
+				7B1BD5F7232BB9FE00AD4CD7 /* MotionCapture3D_ViewController.swift in Sources */,
+				7B1BD5FD232BB9FE00AD4CD7 /* PeopleOcclusion3D_ViewController.swift in Sources */,
+				7B500524232BB1CD00F3B448 /* Menu_ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B5004FE232BAFE700F3B448 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B500509232BAFE700F3B448 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7B500504232BAFE700F3B448 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B5004EB232BAFE300F3B448 /* ARKit-Invader */;
+			targetProxy = 7B500503232BAFE700F3B448 /* PBXContainerItemProxy */;
+		};
+		7B50050F232BAFE700F3B448 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B5004EB232BAFE300F3B448 /* ARKit-Invader */;
+			targetProxy = 7B50050E232BAFE700F3B448 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7B500514232BAFE700F3B448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7B500515232BAFE700F3B448 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7B500517232BAFE700F3B448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GRPFP8K8M3;
+				INFOPLIST_FILE = "ARKit-Invader/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "y3llow.ARKit-Invader";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7B500518232BAFE700F3B448 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GRPFP8K8M3;
+				INFOPLIST_FILE = "ARKit-Invader/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "y3llow.ARKit-Invader";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7B50051A232BAFE700F3B448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GRPFP8K8M3;
+				INFOPLIST_FILE = "ARKit-InvaderTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "y3llow.ARKit-InvaderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARKit-Invader.app/ARKit-Invader";
+			};
+			name = Debug;
+		};
+		7B50051B232BAFE700F3B448 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GRPFP8K8M3;
+				INFOPLIST_FILE = "ARKit-InvaderTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "y3llow.ARKit-InvaderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARKit-Invader.app/ARKit-Invader";
+			};
+			name = Release;
+		};
+		7B50051D232BAFE700F3B448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GRPFP8K8M3;
+				INFOPLIST_FILE = "ARKit-InvaderUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "y3llow.ARKit-InvaderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ARKit-Invader";
+			};
+			name = Debug;
+		};
+		7B50051E232BAFE700F3B448 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GRPFP8K8M3;
+				INFOPLIST_FILE = "ARKit-InvaderUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "y3llow.ARKit-InvaderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ARKit-Invader";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B5004E7232BAFE200F3B448 /* Build configuration list for PBXProject "ARKit-Invader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B500514232BAFE700F3B448 /* Debug */,
+				7B500515232BAFE700F3B448 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B500516232BAFE700F3B448 /* Build configuration list for PBXNativeTarget "ARKit-Invader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B500517232BAFE700F3B448 /* Debug */,
+				7B500518232BAFE700F3B448 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B500519232BAFE700F3B448 /* Build configuration list for PBXNativeTarget "ARKit-InvaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B50051A232BAFE700F3B448 /* Debug */,
+				7B50051B232BAFE700F3B448 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B50051C232BAFE700F3B448 /* Build configuration list for PBXNativeTarget "ARKit-InvaderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B50051D232BAFE700F3B448 /* Debug */,
+				7B50051E232BAFE700F3B448 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7B5004E4232BAFE200F3B448 /* Project object */;
+}
