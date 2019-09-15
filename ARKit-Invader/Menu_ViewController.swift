@@ -8,12 +8,31 @@
 
 import UIKit
 import SceneKit
+import ARKit
 
 class Menu_ViewController: UIViewController {
 
+    @IBOutlet weak var CoachingUI_Button: UIButton!
+    @IBOutlet weak var PeopleOcclusion2D_Button: UIButton!
+    @IBOutlet weak var PeopleOcclusion3D_Button: UIButton!
+    @IBOutlet weak var MotionCapture2D_Button: UIButton!
+    @IBOutlet weak var MotionCapture3D_Button: UIButton!
+    @IBOutlet weak var MultipleFaceTracking_Button: UIButton!
+    @IBOutlet weak var SimultaneousCamera_Button: UIButton!
+    @IBOutlet weak var CollaborativeSessions_Button: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        guard ARBodyTrackingConfiguration.isSupported else {
+            PeopleOcclusion2D_Button.isEnabled = false
+            PeopleOcclusion3D_Button.isEnabled = false
+            MotionCapture2D_Button.isEnabled = false
+            MotionCapture3D_Button.isEnabled = false
+            MultipleFaceTracking_Button.isEnabled = false
+            SimultaneousCamera_Button.isEnabled = false
+            return
+        }
     }
     
     @IBAction func HowToUse_Touch(_ sender: Any) {
