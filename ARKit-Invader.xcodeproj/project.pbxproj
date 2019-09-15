@@ -61,8 +61,8 @@
 		7B500523232BB1CD00F3B448 /* Menu_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu_ViewController.swift; sourceTree = "<group>"; };
 		7B50052D232BB26600F3B448 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B50052E232BB26600F3B448 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		7BF6FA41232BE58200887F33 /* PixelMplus10-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PixelMplus10-Regular.ttf"; sourceTree = "<group>"; };
-		7BF6FA42232BE58200887F33 /* ATROX.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = ATROX.TTF; sourceTree = "<group>"; };
+		7BF6FA41232BE58200887F33 /* PixelMplus10-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PixelMplus10-Regular.ttf"; path = "../../Font/PixelMplus10-Regular.ttf"; sourceTree = "<group>"; };
+		7BF6FA42232BE58200887F33 /* ATROX.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = ATROX.TTF; path = ../../Font/ATROX.TTF; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -447,6 +447,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GRPFP8K8M3;
 				INFOPLIST_FILE = "ARKit-Invader/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -465,6 +466,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GRPFP8K8M3;
 				INFOPLIST_FILE = "ARKit-Invader/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

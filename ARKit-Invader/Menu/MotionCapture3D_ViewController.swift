@@ -44,7 +44,11 @@ class MotionCapture3D_ViewController: UIViewController, ARSessionDelegate {
         for anchor in anchors {
             guard let bodyAnchor = anchor as? ARBodyAnchor else { continue }
             
-            let bodyPosition = simd_make_float3(bodyAnchor.transform.columns.3)
+            let bodyPosition = simd_make_float3(
+                bodyAnchor.transform.columns.3.x - 1,
+                bodyAnchor.transform.columns.3.y,
+                bodyAnchor.transform.columns.3.z
+            )
             characterAnchor.position = bodyPosition
             characterAnchor.orientation = Transform(matrix: bodyAnchor.transform).rotation
             if let character = character, character.parent == nil {
