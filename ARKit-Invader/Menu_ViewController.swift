@@ -26,11 +26,17 @@ class Menu_ViewController: UIViewController {
         
         guard ARBodyTrackingConfiguration.isSupported else {
             PeopleOcclusion2D_Button.isEnabled = false
+            PeopleOcclusion2D_Button.alpha = 0.5
             PeopleOcclusion3D_Button.isEnabled = false
+            PeopleOcclusion3D_Button.alpha = 0.5
             MotionCapture2D_Button.isEnabled = false
+            MotionCapture2D_Button.alpha = 0.5
             MotionCapture3D_Button.isEnabled = false
+            MotionCapture3D_Button.alpha = 0.5
             MultipleFaceTracking_Button.isEnabled = false
+            MultipleFaceTracking_Button.alpha = 0.5
             SimultaneousCamera_Button.isEnabled = false
+            SimultaneousCamera_Button.alpha = 0.5
             return
         }
     }
