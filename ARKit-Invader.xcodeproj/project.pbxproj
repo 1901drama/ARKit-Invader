@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B1226F523312E75004D2C3B /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 7B1226F423312E75004D2C3B /* Experience.rcproject */; };
 		7B1BD5F6232BB9FE00AD4CD7 /* SimultaneousCamera_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1BD5EE232BB9FD00AD4CD7 /* SimultaneousCamera_ViewController.swift */; };
 		7B1BD5F7232BB9FE00AD4CD7 /* MotionCapture3D_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1BD5EF232BB9FD00AD4CD7 /* MotionCapture3D_ViewController.swift */; };
 		7B1BD5F8232BB9FE00AD4CD7 /* CollaborativeSessions_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1BD5F0232BB9FD00AD4CD7 /* CollaborativeSessions_ViewController.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B1226F423312E75004D2C3B /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		7B1BD5EE232BB9FD00AD4CD7 /* SimultaneousCamera_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimultaneousCamera_ViewController.swift; sourceTree = "<group>"; };
 		7B1BD5EF232BB9FD00AD4CD7 /* MotionCapture3D_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionCapture3D_ViewController.swift; sourceTree = "<group>"; };
 		7B1BD5F0232BB9FD00AD4CD7 /* CollaborativeSessions_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollaborativeSessions_ViewController.swift; sourceTree = "<group>"; };
@@ -61,8 +63,8 @@
 		7B500523232BB1CD00F3B448 /* Menu_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu_ViewController.swift; sourceTree = "<group>"; };
 		7B50052D232BB26600F3B448 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B50052E232BB26600F3B448 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		7BF6FA41232BE58200887F33 /* PixelMplus10-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PixelMplus10-Regular.ttf"; path = "../../Font/PixelMplus10-Regular.ttf"; sourceTree = "<group>"; };
-		7BF6FA42232BE58200887F33 /* ATROX.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = ATROX.TTF; path = ../../Font/ATROX.TTF; sourceTree = "<group>"; };
+		7BF6FA41232BE58200887F33 /* PixelMplus10-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PixelMplus10-Regular.ttf"; sourceTree = "<group>"; };
+		7BF6FA42232BE58200887F33 /* ATROX.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = ATROX.TTF; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 				7BF6FA40232BE57000887F33 /* Font */,
 				7B5004F1232BAFE300F3B448 /* art.scnassets */,
 				7B5004F8232BAFE700F3B448 /* Assets.xcassets */,
+				7B1226F423312E75004D2C3B /* Experience.rcproject */,
 				7B5004FD232BAFE700F3B448 /* Info.plist */,
 			);
 			path = "ARKit-Invader";
@@ -145,8 +148,7 @@
 				7BF6FA42232BE58200887F33 /* ATROX.TTF */,
 				7BF6FA41232BE58200887F33 /* PixelMplus10-Regular.ttf */,
 			);
-			name = Font;
-			path = Menu/Font;
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B1226F523312E75004D2C3B /* Experience.rcproject in Sources */,
 				7B1BD5FC232BB9FE00AD4CD7 /* MotionCapture2D_ViewController.swift in Sources */,
 				7B1BD5FB232BB9FE00AD4CD7 /* MultipleFaceTracking_ViewController.swift in Sources */,
 				7B1BD5FA232BB9FE00AD4CD7 /* CoachingUI_ViewController.swift in Sources */,

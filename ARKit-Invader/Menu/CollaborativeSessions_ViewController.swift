@@ -10,30 +10,31 @@
 
 import UIKit
 import SceneKit
+import RealityKit
 import ARKit
 import MultipeerConnectivity
 
 class CollaborativeSessions_ViewController: UIViewController, ARSCNViewDelegate,ARSessionDelegate {
 
-    @IBOutlet var sceneView: ARSCNView!
+    @IBOutlet var arView: ARView!
 
     var myPeerID:MCPeerID!
     var participantID: MCPeerID!
     private var mpsession: MCSession!
     private var serviceAdvertiser: MCNearbyServiceAdvertiser!
     private var serviceBrowser: MCNearbyServiceBrowser!
-    static let serviceType = "arkit3-sample"
+    static let serviceType = "arkit-invader"
+
+    let invaderEntity = ModelEntity()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        sceneView.delegate = self
-        sceneView.scene = SCNScene()
-        sceneView.session.delegate = self
+        arView.session.delegate = self
         
         let configuration = ARWorldTrackingConfiguration()
         configuration.isCollaborationEnabled = true
-        sceneView.session.run(configuration)
+        arView.session.run(configuration)
         
         myPeerID = MCPeerID(displayName: UIDevice.current.name)
         initMultipeerSession(receivedDataHandler: receivedData)
@@ -41,34 +42,18 @@ class CollaborativeSessions_ViewController: UIViewController, ARSCNViewDelegate,
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let touch = touches.first else {return}
-        let pos = touch.location(in: sceneView)
+        let pos = touch.location(in: arView)
         
-        let results = sceneView.hitTest(pos, types: .featurePoint)
+        let results = arView.hitTest(pos, types: .featurePoint)
         if !results.isEmpty {
             let hitTestResult = results.first!
+            let anchor = ARAnchor(name: "invader", transform: hitTestResult.worldTransform)
+            arView.session.add(anchor: anchor)
             
-            let anchor = ARAnchor(name: "ship", transform: hitTestResult.worldTransform)
-            sceneView.session.add(anchor: anchor)
-            
-            //let transform = hitTestResult.worldTransform
-            //let thirdColumn = transform.columns.3
-
-            //guard let scene = SCNScene(named: "ship.scn",inDirectory: "art.scnassets") else {fatalError()}
-            //let shipNode = (scene.rootNode.childNode(withName: "ship", recursively: false))!
-            //shipNode.position = SCNVector3( thirdColumn.x, thirdColumn.y, thirdColumn.z)
-            //sceneView.scene.rootNode.addChildNode(shipNode)
         }
     }
     
-    // MARK: - ARSCNViewDelegate
-    func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
-        if anchor.name == "ship" {
-            guard let scene = SCNScene(named: "ship.scn",inDirectory: "art.scnassets") else {fatalError()}
-            let shipNode = (scene.rootNode.childNode(withName: "ship", recursively: false))!
-            node.addChildNode(shipNode)
-        }
-    }
-    
+    // MARK: - ARViewDelegate
     
     func session(_ session: ARSession, didOutputCollaborationData data:ARSession.CollaborationData) {
         if let collaborationDataEncoded = try? NSKeyedArchiver.archivedData(withRootObject: data, requiringSecureCoding: true){
@@ -79,23 +64,34 @@ class CollaborativeSessions_ViewController: UIViewController, ARSCNViewDelegate,
 
     func receivedData(_ data:Data, from peer: MCPeerID) {
         if let collaborationData = try? NSKeyedUnarchiver.unarchivedObject(ofClass: ARSession.CollaborationData.self, from: data){
-            sceneView.session.update(with: collaborationData)
+            self.arView.session.update(with: collaborationData)
             print("2*****",collaborationData)
         }
     }
     
     func session(_ session: ARSession, didAdd anchors: [ARAnchor]) {
         print("3*****",anchors.first as Any)
-        if let anchor = anchors.first as? ARParticipantAnchor {
-            print("4*****",anchor)
-            let transform = anchor.transform
-            let thirdColumn = transform.columns.3
-/*
-            guard let scene = SCNScene(named: "ship.scn",inDirectory: "art.scnassets") else {fatalError()}
-            let shipNode = (scene.rootNode.childNode(withName: "ship", recursively: false))!
-            shipNode.position = SCNVector3( thirdColumn.x, thirdColumn.y, thirdColumn.z)
-            sceneView.scene.rootNode.addChildNode(shipNode)
- */
+        
+        for anchor in anchors {
+            //print("didAdd anchor.name:",anchor.name!)
+     
+            /*
+            guard let invaderModel = try? Experience.loadInvaders() else { return }
+            arView.scene.anchors.append(invaderModel)
+
+            if anchor.name == "invader" {
+                guard let scene = SCNScene(named: "ship.scn",inDirectory: "art.scnassets") else {fatalError()}
+                let shipNode = (scene.rootNode.childNode(withName: "ship", recursively: false))!
+                shipNode.position = simd_make_float3(anchor.transform.columns.3)
+                arView.addChild(shipNode)
+            }
+             */
+
+            if anchor.sessionIdentifier == session.identifier {
+                print("4***** Self placed Anchor")
+            } else {
+                print("4***** Another participant Anchor")
+            }
         }
     }
 
