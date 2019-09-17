@@ -18,7 +18,7 @@ class PeopleOcclusion3D_ViewController: UIViewController, ARSCNViewDelegate {
         super.viewDidLoad()
         
         sceneView.delegate = self        
-        sceneView.scene = SCNScene(named: "art.scnassets/ship.scn")!
+        sceneView.scene = SCNScene(named: "art.scnassets/invaderB.scn")!
 
         let configuration = ARWorldTrackingConfiguration()
         configuration.frameSemantics = .personSegmentationWithDepth
