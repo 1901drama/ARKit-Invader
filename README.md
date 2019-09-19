@@ -21,7 +21,7 @@ ARKit-Invader is a collection of ARKit3 samples.
 
 2.Open `ARKit-Invader.xcodeproj` with Xcode 11 and build it.
 
-It can **NOT** run on **Simulator**. Most functions require an A12 chip.
+※It can **NOT** run on **Simulator**. Most functions require an A12 chip.
 
 
 ## Contents
@@ -40,7 +40,7 @@ A function to display an animation for acquiring environmental data.
 
 A function that displays the user's body in front of 3D objects.
 
-![](README_images/.gif)
+![](README_images/PeopleOcclusion2D.gif)
 
 
 ### People Occlusion 3D
@@ -48,7 +48,7 @@ A function that displays the user's body in front of 3D objects.
 
 A function that reflects and displays the context of the user's body and 3D objects.
 
-![](README_images/.gif)
+![](README_images/PeopleOcclusion3D.gif)
 
 
 ### Motion Capture 2D
@@ -80,7 +80,7 @@ A function that simultaneously tracks the location and facial expression of up t
 
 A function that allows AR to be used simultaneously with the front and rear cameras.
 
-![](README_images/.gif)
+![](README_images/SimultaneousCamera.gif)
 
 
 ### Collaborative Sessions
@@ -88,4 +88,15 @@ A function that allows AR to be used simultaneously with the front and rear came
 
 Ability to help share AR experiences with other users
 
-![](README_images/SimultaneousCamera.gif)
+![](README_images/CollaborativeSessions_A.gif)
+![](README_images/CollaborativeSessions_B.gif)
+
+
+
+## Details
+ 
+ Qiita
+https://qiita.com/1901drama/
+
+
+
