@@ -86,7 +86,7 @@ A function that allows AR to be used simultaneously with the front and rear came
 ### Collaborative Sessions
 他のユーザーとのAR体験の共有を補助する機能
 
-Ability to help share AR experiences with other users
+Ability to help share AR experiences with other users.
 
 ![](README_images/CollaborativeSessions_A.gif)
 ![](README_images/CollaborativeSessions_B.gif)
