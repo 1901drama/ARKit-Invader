@@ -28,6 +28,8 @@ class MotionCapture2D_ViewController: UIViewController, ARSessionDelegate {
         arView.session.run(configuration)
     }
 
+    // MARK: - Delegate
+
     func session(_ session: ARSession, didUpdate frame: ARFrame) {
         ClearCircleLayers()
 

@@ -39,7 +39,9 @@ class MotionCapture3D_ViewController: UIViewController, ARSessionDelegate {
             }
         })
     }
-    
+
+    // MARK: - Delegate
+
     func session(_ session: ARSession, didUpdate anchors: [ARAnchor]) {
         for anchor in anchors {
             guard let bodyAnchor = anchor as? ARBodyAnchor else { continue }
