@@ -8,7 +8,7 @@
 )](https://developer.apple.com/iphone/index.action)
 [![ARKit](http://img.shields.io/badge/ARKit-3.0-blue.svg?style=flat
 )](https://developer.apple.com/iphone/index.action)
-[![Language](http://img.shields.io/badge/language-Swift-brightgreen.svg?style=flat
+[![Language](http://img.shields.io/badge/language-Swift5-brightgreen.svg?style=flat
 )](https://developer.apple.com/swift)
 [![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat
 )](http://mit-license.org)
@@ -83,7 +83,7 @@ A function that can acquire the position of the user's body / joint in spatial c
 
 
 ## Multiple Face Tracking
-![](README_images/.gif)
+![](README_images/MultipleFaceTracking.gif)
 
 A function that simultaneously tracks the location and facial expression of up to three people.
 
