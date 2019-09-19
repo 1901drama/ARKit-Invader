@@ -19,7 +19,7 @@ ARKit-Invader is a collection of ARKit3 samples.
 
 # How to build
 
-1.Download this Repository
+1.Download this Repository.
 
 2.Open `ARKit-Invader.xcodeproj` with Xcode 11 and build it.
 
@@ -30,6 +30,7 @@ ARKit-Invader is a collection of ARKit3 samples.
 
 ## Coaching UI
 ![](README_images/CoachingUI.gif)
+
 環境データ取得用のアニメーションを表示させる機能。
 
 A function to display an animation for acquiring environmental data.
@@ -38,6 +39,7 @@ A function to display an animation for acquiring environmental data.
 
 ## People Occlusion 2D
 ![](README_images/PeopleOcclusion2D.gif)
+
 ユーザーの身体を、3Dオブジェクトの手前に表示させる機能。
 
 A function that displays the user's body in front of 3D objects.
@@ -46,6 +48,7 @@ A function that displays the user's body in front of 3D objects.
 
 ## People Occlusion 3D
 ![](README_images/PeopleOcclusion3D.gif)
+
 ユーザーの身体と3Dオブジェクトの前後関係を、反映・表示させる機能。
 
 A function that reflects and displays the context of the user's body and 3D objects.
@@ -54,6 +57,7 @@ A function that reflects and displays the context of the user's body and 3D obje
 
 ## Motion Capture 2D
 ![](README_images/.gif)
+
 ユーザーの身体/関節の位置を画面上の位置座標で取得出来る機能。
 
 A function that can acquire the position of the user's body / joint using the position coordinates on the screen.
@@ -62,6 +66,7 @@ A function that can acquire the position of the user's body / joint using the po
 
 ## Motion Capture 3D
 ![](README_images/.gif)
+
 ユーザーの身体/関節の位置を空間座標で取得出来る機能。
 
 A function that can acquire the position of the user's body / joint in spatial coordinates.
@@ -70,6 +75,7 @@ A function that can acquire the position of the user's body / joint in spatial c
 
 ## Multiple Face Tracking
 ![](README_images/.gif)
+
 ３人までの顔の場所と表情を同時追跡する機能。
 
 A function that simultaneously tracks the location and facial expression of up to three people.
@@ -78,6 +84,7 @@ A function that simultaneously tracks the location and facial expression of up t
 
 ## Simultaneous Front and Back Camera
 ![](README_images/SimultaneousCamera.gif)
+
 手前側のカメラと背面側のカメラで同時にARを利用出来る機能。
 
 A function that allows AR to be used simultaneously with the front and rear cameras.
@@ -87,6 +94,7 @@ A function that allows AR to be used simultaneously with the front and rear came
 ## Collaborative Sessions
 ![](README_images/CollaborativeSessions_A.gif)
 ![](README_images/CollaborativeSessions_B.gif)
+
 他のユーザーとのAR体験の共有を補助する機能
 
 Ability to help share AR experiences with other users.
@@ -95,7 +103,10 @@ Ability to help share AR experiences with other users.
 
 # Details
  
- Qiita https://qiita.com/1901drama/
+Qiita https://qiita.com/1901drama/
 
+GitHub https://github.com/1901drama/ARKit-Invader
 
+☆(star)や 👍(いいね) など、フィードバック頂けるともっと頑張りますので、宜しくお願いします！
 
+☆ (star), 👍 (like) etc. If you can give feedback, I will do my best, so thank you!
