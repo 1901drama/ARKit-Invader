@@ -1,8 +1,12 @@
 # ARKit-Invader
 
-[![Platform](http://img.shields.io/badge/platform-ios-blue.svg?style=flat
+[![Platform](http://img.shields.io/badge/platform-iOS-blue.svg?style=flat
 )](https://developer.apple.com/iphone/index.action)
-[![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat
+[![iOS](http://img.shields.io/badge/iOS-13.0-blue.svg?style=flat
+)](https://developer.apple.com/iphone/index.action)
+[![ARKit](http://img.shields.io/badge/ARKit-3.0-blue.svg?style=flat
+)](https://developer.apple.com/iphone/index.action)
+[![Language](http://img.shields.io/badge/language-Swift-brightgreen.svg?style=flat
 )](https://developer.apple.com/swift)
 [![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat
 )](http://mit-license.org)
@@ -13,9 +17,11 @@ ARKit-Invader is a collection of ARKit3 samples.
 
 ## How to build
 
-1.Download & Open `ARKit-Invader.xcodeproj` with Xcode 11 and build it.
+1.Download this Repository
 
-It can **NOT** run on **Simulator**. Most functions require an A12 chip
+2.Open `ARKit-Invader.xcodeproj` with Xcode 11 and build it.
+
+It can **NOT** run on **Simulator**. Most functions require an A12 chip.
 
 
 ## Contents
