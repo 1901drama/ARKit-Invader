@@ -56,7 +56,9 @@ A function that reflects and displays the context of the user's body and 3D obje
 
 
 ## Motion Capture 2D
-![](README_images/.gif)
+![](README_images/MotionCapture2D.gif)
+
+[参考：ラジオ体操第一・実演](https://www.youtube.com/watch?v=_YZZfaMGEOU)
 
 ユーザーの身体/関節の位置を画面上の位置座標で取得出来る機能。
 
@@ -65,7 +67,9 @@ A function that can acquire the position of the user's body / joint using the po
 
 
 ## Motion Capture 3D
-![](README_images/.gif)
+![](README_images/MotionCapture3D.gif)
+
+[参考：ラジオ体操第一・実演](https://www.youtube.com/watch?v=_YZZfaMGEOU)
 
 ユーザーの身体/関節の位置を空間座標で取得出来る機能。
 
@@ -102,7 +106,7 @@ Ability to help share AR experiences with other users.
 
 
 # Details
- 
+
 Qiita https://qiita.com/1901drama/
 
 GitHub https://github.com/1901drama/ARKit-Invader
