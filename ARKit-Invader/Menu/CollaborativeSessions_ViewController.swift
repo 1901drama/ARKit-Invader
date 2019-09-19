@@ -6,17 +6,14 @@
 //  Copyright © 2019 1901drama. All rights reserved.
 //
 
-// 作成中
-
 import UIKit
 import SceneKit
-import RealityKit
 import ARKit
 import MultipeerConnectivity
 
 class CollaborativeSessions_ViewController: UIViewController, ARSCNViewDelegate,ARSessionDelegate {
 
-    @IBOutlet var arView: ARView!
+    @IBOutlet var sceneView: ARSCNView!
 
     var myPeerID:MCPeerID!
     var participantID: MCPeerID!
@@ -25,90 +22,103 @@ class CollaborativeSessions_ViewController: UIViewController, ARSCNViewDelegate,
     private var serviceBrowser: MCNearbyServiceBrowser!
     static let serviceType = "arkit-invader"
 
-    let invaderEntity = ModelEntity()
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        arView.session.delegate = self
+        myPeerID = MCPeerID(displayName: UIDevice.current.name)
+        initMultipeerSession(receivedDataHandler: receivedData)
+        
+        sceneView.delegate = self
+        sceneView.session.delegate = self
         
         let configuration = ARWorldTrackingConfiguration()
         configuration.isCollaborationEnabled = true
-        arView.session.run(configuration)
-        
-        myPeerID = MCPeerID(displayName: UIDevice.current.name)
-        initMultipeerSession(receivedDataHandler: receivedData)
+        sceneView.session.run(configuration)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let touch = touches.first else {return}
-        let pos = touch.location(in: arView)
+        let pos = touch.location(in: sceneView)
         
-        let results = arView.hitTest(pos, types: .featurePoint)
+        let results = sceneView.hitTest(pos, types: .featurePoint)
         if !results.isEmpty {
             let hitTestResult = results.first!
             let anchor = ARAnchor(name: "invader", transform: hitTestResult.worldTransform)
-            arView.session.add(anchor: anchor)
-            
+            sceneView.session.add(anchor: anchor)
         }
     }
     
-    // MARK: - ARViewDelegate
+    // MARK: - Delegate
+
+    func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
+        if anchor.name == "invader" {
+            //自分が追加した場合は、invaderAで表示
+            if anchor.sessionIdentifier == self.sceneView.session.identifier {
+                guard let scene = SCNScene(named: "invaderA.scn",inDirectory: "art.scnassets") else { return }
+                let sceneNode = (scene.rootNode.childNode(withName: "invaderA", recursively: false))!
+                node.addChildNode(sceneNode)
+                
+            //相手が追加した場合は、invaderBで表示
+            } else {
+                guard let scene = SCNScene(named: "invaderB.scn",inDirectory: "art.scnassets") else { return }
+                let sceneNode = (scene.rootNode.childNode(withName: "invaderB", recursively: false))!
+                node.addChildNode(sceneNode)
+            }
+        }
+    }
     
     func session(_ session: ARSession, didOutputCollaborationData data:ARSession.CollaborationData) {
         if let collaborationDataEncoded = try? NSKeyedArchiver.archivedData(withRootObject: data, requiringSecureCoding: true){
             self.sendToAllPeers(collaborationDataEncoded)
-            print("1*****",collaborationDataEncoded)
         }
     }
 
     func receivedData(_ data:Data, from peer: MCPeerID) {
         if let collaborationData = try? NSKeyedUnarchiver.unarchivedObject(ofClass: ARSession.CollaborationData.self, from: data){
-            self.arView.session.update(with: collaborationData)
-            print("2*****",collaborationData)
+            self.sceneView.session.update(with: collaborationData)
         }
     }
     
     func session(_ session: ARSession, didAdd anchors: [ARAnchor]) {
-        print("3*****",anchors.first as Any)
-        
-        for anchor in anchors {
-            //print("didAdd anchor.name:",anchor.name!)
-     
-            /*
-            guard let invaderModel = try? Experience.loadInvaders() else { return }
-            arView.scene.anchors.append(invaderModel)
-
-            if anchor.name == "invader" {
-                guard let scene = SCNScene(named: "ship.scn",inDirectory: "art.scnassets") else {fatalError()}
-                let shipNode = (scene.rootNode.childNode(withName: "ship", recursively: false))!
-                shipNode.position = simd_make_float3(anchor.transform.columns.3)
-                arView.addChild(shipNode)
+        anchors.forEach { anchor in
+            if anchor.sessionIdentifier == self.sceneView.session.identifier {
+                //My own anchor was added
             }
-             */
-
-            if anchor.sessionIdentifier == session.identifier {
-                print("4***** Self placed Anchor")
-            } else {
-                print("4***** Another participant Anchor")
+            else {
+                //Another one's anchor was added
             }
         }
     }
-
+    
+    func session(_ session: ARSession, didRemove anchors: [ARAnchor]) {
+        anchors.forEach { anchor in
+            if anchor.sessionIdentifier == self.sceneView.session.identifier {
+                //My own anchor was removed
+            }
+            else {
+                //Another one's anchor was removed
+            }
+        }
+    }
+    
     func session(_ session: ARSession, didUpdate anchors: [ARAnchor]) {
-        if let anchor = anchors.first as? ARParticipantAnchor {
-            let transform = anchor.transform
+        anchors.forEach { anchor in
+            if anchor.sessionIdentifier == self.sceneView.session.identifier {
+                //My own anchor was updated
+            }
+            else {
+                //Another one's anchor was updated
+            }
         }
     }
+    
+}
 
- }
+// MARK: - MultipeerConnectivity
 
-
-//MultipeerConnectivity
 extension CollaborativeSessions_ViewController: MCSessionDelegate, MCNearbyServiceBrowserDelegate, MCNearbyServiceAdvertiserDelegate{
     
     func initMultipeerSession(receivedDataHandler: @escaping (Data, MCPeerID) -> Void ) {
-        //print("initMultipeerSession:",serviceAdvertiser,serviceBrowser)
         mpsession = MCSession(peer: myPeerID, securityIdentity: nil, encryptionPreference: MCEncryptionPreference.none)
         mpsession.delegate = self
         serviceAdvertiser = MCNearbyServiceAdvertiser(peer: myPeerID, discoveryInfo: nil, serviceType: CollaborativeSessions_ViewController.serviceType)
@@ -120,11 +130,16 @@ extension CollaborativeSessions_ViewController: MCSessionDelegate, MCNearbyServi
     }
     
     func sendToAllPeers(_ data: Data) {
-         do { try mpsession.send(data, toPeers: mpsession.connectedPeers, with: .reliable) }
-         catch { print("** error sending data to peers: \(error.localizedDescription)") }
+         do {
+            try mpsession.send(data, toPeers: mpsession.connectedPeers, with: .reliable)
+         } catch {
+            print("** error sending data to peers: \(error.localizedDescription)")
+        }
      }
     
-    var connectedPeers: [MCPeerID] { return mpsession.connectedPeers }
+    var connectedPeers: [MCPeerID] {
+        return mpsession.connectedPeers
+    }
     
     func session(_ session: MCSession, didReceive data: Data, fromPeer peerID: MCPeerID) {
         receivedData(data, from: peerID)
@@ -146,20 +161,26 @@ extension CollaborativeSessions_ViewController: MCSessionDelegate, MCNearbyServi
     
     func session(_ session: MCSession, didReceive stream: InputStream, withName streamName: String, fromPeer peerID: MCPeerID) {
     }
+    
     func session(_ session: MCSession, didReceiveCertificate certificate: [Any]?, fromPeer peerID: MCPeerID, certificateHandler: @escaping (Bool) -> Void) {
         certificateHandler(true)
     }
+    
     func session(_ session: MCSession, didStartReceivingResourceWithName resourceName: String, fromPeer peerID: MCPeerID, with progress: Progress) {
     }
+    
     func session(_ session: MCSession, didFinishReceivingResourceWithName resourceName: String, fromPeer peerID: MCPeerID, at localURL: URL?, withError error: Error?) {
     }
+    
     public func browser(_ browser: MCNearbyServiceBrowser, foundPeer peerID: MCPeerID, withDiscoveryInfo info: [String: String]?) {
         browser.invitePeer(peerID, to: mpsession, withContext: nil, timeout: 10)
     }
+    
     public func browser(_ browser: MCNearbyServiceBrowser, lostPeer peerID: MCPeerID) {
     }
+    
     func advertiser(_ advertiser: MCNearbyServiceAdvertiser, didReceiveInvitationFromPeer peerID: MCPeerID, withContext context: Data?, invitationHandler: @escaping (Bool, MCSession?) -> Void) {
         invitationHandler(true, self.mpsession)
     }
+    
 }
-
