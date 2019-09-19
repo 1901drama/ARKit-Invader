@@ -79,39 +79,6 @@ class CollaborativeSessions_ViewController: UIViewController, ARSCNViewDelegate,
         }
     }
     
-    func session(_ session: ARSession, didAdd anchors: [ARAnchor]) {
-        anchors.forEach { anchor in
-            if anchor.sessionIdentifier == self.sceneView.session.identifier {
-                //My own anchor was added
-            }
-            else {
-                //Another one's anchor was added
-            }
-        }
-    }
-    
-    func session(_ session: ARSession, didRemove anchors: [ARAnchor]) {
-        anchors.forEach { anchor in
-            if anchor.sessionIdentifier == self.sceneView.session.identifier {
-                //My own anchor was removed
-            }
-            else {
-                //Another one's anchor was removed
-            }
-        }
-    }
-    
-    func session(_ session: ARSession, didUpdate anchors: [ARAnchor]) {
-        anchors.forEach { anchor in
-            if anchor.sessionIdentifier == self.sceneView.session.identifier {
-                //My own anchor was updated
-            }
-            else {
-                //Another one's anchor was updated
-            }
-        }
-    }
-    
 }
 
 // MARK: - MultipeerConnectivity
@@ -133,7 +100,7 @@ extension CollaborativeSessions_ViewController: MCSessionDelegate, MCNearbyServi
          do {
             try mpsession.send(data, toPeers: mpsession.connectedPeers, with: .reliable)
          } catch {
-            print("** error sending data to peers: \(error.localizedDescription)")
+            print("*** error sending data to peers: \(error.localizedDescription)")
         }
      }
     
@@ -148,12 +115,12 @@ extension CollaborativeSessions_ViewController: MCSessionDelegate, MCNearbyServi
     func session(_ session: MCSession, peer peerID: MCPeerID, didChange state: MCSessionState) {
         switch state {
         case .notConnected:
-            print("state: \(state)")
+            print("*** estate: \(state)")
         case .connected:
-            print("state: \(state)")
+            print("*** estate: \(state)")
             self.participantID = peerID
         case .connecting:
-            print("state: \(state)")
+            print("*** estate: \(state)")
         @unknown default:
             fatalError()
         }
