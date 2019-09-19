@@ -42,7 +42,7 @@ class Menu_ViewController: UIViewController {
     }
     
     @IBAction func HowToUse_Touch(_ sender: Any) {
-        let url = URL(string: "https://qiita.com/1901drama")
+        let url = URL(string: "https://qiita.com/1901drama/items/58bce4a1dcea30740678")
         UIApplication.shared.open(url!)
     }
     

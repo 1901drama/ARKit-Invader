@@ -116,8 +116,8 @@ Ability to help share AR experiences with other users.
 
 # Details
 
-Qiita https://qiita.com/1901drama/
+[Qiita (@1901drama)](https://qiita.com/1901drama/items/58bce4a1dcea30740678)
 
-GitHub https://github.com/1901drama/ARKit-Invader
+[GitHub (@1901drama)](https://github.com/1901drama/ARKit-Invader)
 
 ☆ (star), 👍 (like) etc. If you can give feedback, I will do my best, so thank you!
