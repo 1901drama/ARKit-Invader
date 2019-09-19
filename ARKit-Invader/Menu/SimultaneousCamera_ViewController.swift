@@ -35,6 +35,8 @@ class SimultaneousCamera_ViewController: UIViewController, ARSCNViewDelegate, AR
         sceneView.scene.rootNode.addChildNode(BackFaceNode)
     }
 
+    // MARK: - Delegate
+
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
         guard anchor is ARFaceAnchor else { return }
         

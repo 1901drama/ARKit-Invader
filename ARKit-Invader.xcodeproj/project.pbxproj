@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7B1226F523312E75004D2C3B /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 7B1226F423312E75004D2C3B /* Experience.rcproject */; };
 		7B1BD5F6232BB9FE00AD4CD7 /* SimultaneousCamera_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1BD5EE232BB9FD00AD4CD7 /* SimultaneousCamera_ViewController.swift */; };
 		7B1BD5F7232BB9FE00AD4CD7 /* MotionCapture3D_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1BD5EF232BB9FD00AD4CD7 /* MotionCapture3D_ViewController.swift */; };
 		7B1BD5F8232BB9FE00AD4CD7 /* CollaborativeSessions_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1BD5F0232BB9FD00AD4CD7 /* CollaborativeSessions_ViewController.swift */; };
@@ -44,7 +43,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7B1226F423312E75004D2C3B /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		7B1BD5EE232BB9FD00AD4CD7 /* SimultaneousCamera_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimultaneousCamera_ViewController.swift; sourceTree = "<group>"; };
 		7B1BD5EF232BB9FD00AD4CD7 /* MotionCapture3D_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionCapture3D_ViewController.swift; sourceTree = "<group>"; };
 		7B1BD5F0232BB9FD00AD4CD7 /* CollaborativeSessions_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollaborativeSessions_ViewController.swift; sourceTree = "<group>"; };
@@ -136,7 +134,6 @@
 				7BF6FA40232BE57000887F33 /* Font */,
 				7B5004F1232BAFE300F3B448 /* art.scnassets */,
 				7B5004F8232BAFE700F3B448 /* Assets.xcassets */,
-				7B1226F423312E75004D2C3B /* Experience.rcproject */,
 				7B5004FD232BAFE700F3B448 /* Info.plist */,
 			);
 			path = "ARKit-Invader";
@@ -285,7 +282,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B1226F523312E75004D2C3B /* Experience.rcproject in Sources */,
 				7B1BD5FC232BB9FE00AD4CD7 /* MotionCapture2D_ViewController.swift in Sources */,
 				7B1BD5FB232BB9FE00AD4CD7 /* MultipleFaceTracking_ViewController.swift in Sources */,
 				7B1BD5FA232BB9FE00AD4CD7 /* CoachingUI_ViewController.swift in Sources */,
@@ -448,7 +444,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GRPFP8K8M3;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "ARKit-Invader/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -467,7 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GRPFP8K8M3;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "ARKit-Invader/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (

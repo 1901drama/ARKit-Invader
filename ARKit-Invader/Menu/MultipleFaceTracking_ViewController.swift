@@ -28,6 +28,8 @@ class MultipleFaceTracking_ViewController: UIViewController, ARSCNViewDelegate, 
         sceneView.session.run(configuration)
     }
     
+    // MARK: - Delegate
+
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
         guard let faceAnchor = anchor as? ARFaceAnchor else { return }
 
