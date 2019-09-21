@@ -8,7 +8,7 @@
 )](https://developer.apple.com/iphone/index.action)
 [![ARKit](http://img.shields.io/badge/ARKit-3.0-blue.svg?style=flat
 )](https://developer.apple.com/iphone/index.action)
-[![Language](http://img.shields.io/badge/language-Swift5-brightgreen.svg?style=flat
+[![Swift](http://img.shields.io/badge/Swift-5.0-brightgreen.svg?style=flat
 )](https://developer.apple.com/swift)
 [![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat
 )](http://mit-license.org)
@@ -103,8 +103,7 @@ A function that allows AR to be used simultaneously with the front and rear came
 
 
 ## Collaborative Sessions
-![](README_images/CollaborativeSessions_A.gif)
-![](README_images/CollaborativeSessions_B.gif)
+![](README_images/CollaborativeSessions.gif)
 
 Ability to help share AR experiences with other users.
 
