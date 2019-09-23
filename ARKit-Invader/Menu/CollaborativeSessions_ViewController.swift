@@ -65,6 +65,12 @@ class CollaborativeSessions_ViewController: UIViewController, ARSCNViewDelegate,
                 node.addChildNode(sceneNode)
             }
         }
+        
+        if anchor is ARParticipantAnchor {
+            guard let scene = SCNScene(named: "invaderC.scn",inDirectory: "art.scnassets") else { return }
+            let participantNode = (scene.rootNode.childNode(withName: "invaderC", recursively: false))!
+            node.addChildNode(participantNode)
+        }
     }
     
     func session(_ session: ARSession, didOutputCollaborationData data:ARSession.CollaborationData) {
