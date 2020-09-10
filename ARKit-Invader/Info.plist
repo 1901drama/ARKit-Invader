@@ -2,6 +2,15 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>nearby interaction Cerca app with network usage</string>
+	<key>NSNearbyInteractionAllowOnceUsageDescription</key>
+	<string>nearby interaction Cerca app with this service</string>
+	<key>NSBonjourServices</key>
+	<array>
+		<string>_arkit-invader._tcp</string>
+		<string>_arkit-invader._udp</string>
+	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

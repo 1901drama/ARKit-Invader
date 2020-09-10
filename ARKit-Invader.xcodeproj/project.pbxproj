@@ -25,23 +25,6 @@
 		7BF6FA44232BE58200887F33 /* ATROX.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 7BF6FA42232BE58200887F33 /* ATROX.TTF */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		7B500503232BAFE700F3B448 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7B5004E4232BAFE200F3B448 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7B5004EB232BAFE300F3B448;
-			remoteInfo = "ARKit-Invader";
-		};
-		7B50050E232BAFE700F3B448 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7B5004E4232BAFE200F3B448 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7B5004EB232BAFE300F3B448;
-			remoteInfo = "ARKit-Invader";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		7B1BD5EE232BB9FD00AD4CD7 /* SimultaneousCamera_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimultaneousCamera_ViewController.swift; sourceTree = "<group>"; };
 		7B1BD5EF232BB9FD00AD4CD7 /* MotionCapture3D_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionCapture3D_ViewController.swift; sourceTree = "<group>"; };
@@ -56,8 +39,6 @@
 		7B5004F1232BAFE300F3B448 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		7B5004F8232BAFE700F3B448 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B5004FD232BAFE700F3B448 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7B500502232BAFE700F3B448 /* ARKit-InvaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ARKit-InvaderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B50050D232BAFE700F3B448 /* ARKit-InvaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ARKit-InvaderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B500523232BB1CD00F3B448 /* Menu_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu_ViewController.swift; sourceTree = "<group>"; };
 		7B50052D232BB26600F3B448 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B50052E232BB26600F3B448 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -67,20 +48,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		7B5004E9232BAFE300F3B448 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B5004FF232BAFE700F3B448 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B50050A232BAFE700F3B448 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -117,8 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				7B5004EC232BAFE300F3B448 /* ARKit-Invader.app */,
-				7B500502232BAFE700F3B448 /* ARKit-InvaderTests.xctest */,
-				7B50050D232BAFE700F3B448 /* ARKit-InvaderUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -168,42 +133,6 @@
 			productReference = 7B5004EC232BAFE300F3B448 /* ARKit-Invader.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7B500501232BAFE700F3B448 /* ARKit-InvaderTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7B500519232BAFE700F3B448 /* Build configuration list for PBXNativeTarget "ARKit-InvaderTests" */;
-			buildPhases = (
-				7B5004FE232BAFE700F3B448 /* Sources */,
-				7B5004FF232BAFE700F3B448 /* Frameworks */,
-				7B500500232BAFE700F3B448 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7B500504232BAFE700F3B448 /* PBXTargetDependency */,
-			);
-			name = "ARKit-InvaderTests";
-			productName = "ARKit-InvaderTests";
-			productReference = 7B500502232BAFE700F3B448 /* ARKit-InvaderTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		7B50050C232BAFE700F3B448 /* ARKit-InvaderUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7B50051C232BAFE700F3B448 /* Build configuration list for PBXNativeTarget "ARKit-InvaderUITests" */;
-			buildPhases = (
-				7B500509232BAFE700F3B448 /* Sources */,
-				7B50050A232BAFE700F3B448 /* Frameworks */,
-				7B50050B232BAFE700F3B448 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7B50050F232BAFE700F3B448 /* PBXTargetDependency */,
-			);
-			name = "ARKit-InvaderUITests";
-			productName = "ARKit-InvaderUITests";
-			productReference = 7B50050D232BAFE700F3B448 /* ARKit-InvaderUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -211,19 +140,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = 1901drama;
 				TargetAttributes = {
 					7B5004EB232BAFE300F3B448 = {
 						CreatedOnToolsVersion = 11.0;
-					};
-					7B500501232BAFE700F3B448 = {
-						CreatedOnToolsVersion = 11.0;
-						TestTargetID = 7B5004EB232BAFE300F3B448;
-					};
-					7B50050C232BAFE700F3B448 = {
-						CreatedOnToolsVersion = 11.0;
-						TestTargetID = 7B5004EB232BAFE300F3B448;
 					};
 				};
 			};
@@ -241,8 +162,6 @@
 			projectRoot = "";
 			targets = (
 				7B5004EB232BAFE300F3B448 /* ARKit-Invader */,
-				7B500501232BAFE700F3B448 /* ARKit-InvaderTests */,
-				7B50050C232BAFE700F3B448 /* ARKit-InvaderUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,20 +177,6 @@
 				7BF6FA44232BE58200887F33 /* ATROX.TTF in Resources */,
 				7B50052F232BB26700F3B448 /* LaunchScreen.storyboard in Resources */,
 				7B5004F9232BAFE700F3B448 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B500500232BAFE700F3B448 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B50050B232BAFE700F3B448 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,34 +200,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7B5004FE232BAFE700F3B448 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B500509232BAFE700F3B448 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		7B500504232BAFE700F3B448 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7B5004EB232BAFE300F3B448 /* ARKit-Invader */;
-			targetProxy = 7B500503232BAFE700F3B448 /* PBXContainerItemProxy */;
-		};
-		7B50050F232BAFE700F3B448 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7B5004EB232BAFE300F3B448 /* ARKit-Invader */;
-			targetProxy = 7B50050E232BAFE700F3B448 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		7B500514232BAFE700F3B448 /* Debug */ = {
@@ -351,6 +229,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -375,7 +254,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -411,6 +290,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -429,7 +309,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -444,14 +324,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = GRPFP8K8M3;
 				INFOPLIST_FILE = "ARKit-Invader/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "y3llow.ARKit-Invader";
+				PRODUCT_BUNDLE_IDENTIFIER = "y3llow.1901.arkit-invader";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -463,101 +343,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = GRPFP8K8M3;
 				INFOPLIST_FILE = "ARKit-Invader/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "y3llow.ARKit-Invader";
+				PRODUCT_BUNDLE_IDENTIFIER = "y3llow.1901.arkit-invader";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		7B50051A232BAFE700F3B448 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GRPFP8K8M3;
-				INFOPLIST_FILE = "ARKit-InvaderTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "y3llow.ARKit-InvaderTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARKit-Invader.app/ARKit-Invader";
-			};
-			name = Debug;
-		};
-		7B50051B232BAFE700F3B448 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GRPFP8K8M3;
-				INFOPLIST_FILE = "ARKit-InvaderTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "y3llow.ARKit-InvaderTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARKit-Invader.app/ARKit-Invader";
-			};
-			name = Release;
-		};
-		7B50051D232BAFE700F3B448 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GRPFP8K8M3;
-				INFOPLIST_FILE = "ARKit-InvaderUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "y3llow.ARKit-InvaderUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "ARKit-Invader";
-			};
-			name = Debug;
-		};
-		7B50051E232BAFE700F3B448 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GRPFP8K8M3;
-				INFOPLIST_FILE = "ARKit-InvaderUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "y3llow.ARKit-InvaderUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "ARKit-Invader";
 			};
 			name = Release;
 		};
@@ -578,24 +374,6 @@
 			buildConfigurations = (
 				7B500517232BAFE700F3B448 /* Debug */,
 				7B500518232BAFE700F3B448 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7B500519232BAFE700F3B448 /* Build configuration list for PBXNativeTarget "ARKit-InvaderTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7B50051A232BAFE700F3B448 /* Debug */,
-				7B50051B232BAFE700F3B448 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7B50051C232BAFE700F3B448 /* Build configuration list for PBXNativeTarget "ARKit-InvaderUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7B50051D232BAFE700F3B448 /* Debug */,
-				7B50051E232BAFE700F3B448 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

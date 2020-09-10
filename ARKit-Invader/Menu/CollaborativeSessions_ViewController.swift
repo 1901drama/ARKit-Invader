@@ -92,7 +92,9 @@ class CollaborativeSessions_ViewController: UIViewController, ARSCNViewDelegate,
 extension CollaborativeSessions_ViewController: MCSessionDelegate, MCNearbyServiceBrowserDelegate, MCNearbyServiceAdvertiserDelegate{
     
     func initMultipeerSession(receivedDataHandler: @escaping (Data, MCPeerID) -> Void ) {
-        mpsession = MCSession(peer: myPeerID, securityIdentity: nil, encryptionPreference: MCEncryptionPreference.none)
+        mpsession = MCSession(peer: myPeerID,
+                              securityIdentity: nil,
+                              encryptionPreference: MCEncryptionPreference.none)
         mpsession.delegate = self
         serviceAdvertiser = MCNearbyServiceAdvertiser(peer: myPeerID, discoveryInfo: nil, serviceType: CollaborativeSessions_ViewController.serviceType)
         serviceAdvertiser.delegate = self
@@ -123,8 +125,9 @@ extension CollaborativeSessions_ViewController: MCSessionDelegate, MCNearbyServi
         case .notConnected:
             print("*** estate: \(state)")
         case .connected:
-            print("*** estate: \(state)")
             self.participantID = peerID
+            print("*** estate: \(state)")
+            print("*** connected peerID: \(String(describing: self.participantID))")
         case .connecting:
             print("*** estate: \(state)")
         @unknown default:
@@ -152,8 +155,16 @@ extension CollaborativeSessions_ViewController: MCSessionDelegate, MCNearbyServi
     public func browser(_ browser: MCNearbyServiceBrowser, lostPeer peerID: MCPeerID) {
     }
     
+    public func browser(_ browser: MCNearbyServiceBrowser, didNotStartBrowsingForPeers error: Error) {
+        print("%@", "didNotStartBrowsingForPeers: \(error)")
+    }
+    
     func advertiser(_ advertiser: MCNearbyServiceAdvertiser, didReceiveInvitationFromPeer peerID: MCPeerID, withContext context: Data?, invitationHandler: @escaping (Bool, MCSession?) -> Void) {
         invitationHandler(true, self.mpsession)
+    }
+    
+    func advertiser(_ advertiser: MCNearbyServiceAdvertiser, didNotStartAdvertisingPeer error: Error) {
+        print("%@", "didNotStartAdvertisingPeer: \(error)")
     }
     
 }
